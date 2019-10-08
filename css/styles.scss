@@ -1,0 +1,48 @@
+@import "colors";
+
+$blue:
+$padding: 12px 20px;
+$side: left;
+$margin: 10px;
+
+
+body{
+  background:
+  user-select: none;
+  display: grid;
+}
+
+
+$paddingDefault: 20px;
+.padding{
+  padding: $paddingDefault;
+
+  &Double{
+    padding: $paddingDefault * 2;
+  }
+
+  &Half{
+    padding: $paddingDefault / 2;
+  }
+}
+
+nav{
+  background-color: aliceblue;
+  line-height: 60px;
+  height: 60px;
+}
+
+header{
+  background-color: lighten(antiquewhite, 15);
+  height: calc(100vh - 670px);
+}
+
+
+@mixin blurText($blur: 5px){
+  color: transparent;
+  text-shadow: 0 0 $blur rgba(0, 0, 0, 0,5);
+}
+.boks{
+  font-size: 40px;
+  @include blurText;
+}
