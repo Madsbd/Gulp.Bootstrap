@@ -1,16 +1,9 @@
 @import "colors";
 
-$blue:
 $padding: 12px 20px;
 $side: left;
 $margin: 10px;
 
-
-body{
-  background:
-  user-select: none;
-  display: grid;
-}
 
 
 $paddingDefault: 20px;
@@ -26,23 +19,91 @@ $paddingDefault: 20px;
   }
 }
 
-nav{
-  background-color: aliceblue;
-  line-height: 60px;
-  height: 60px;
-}
-
-header{
-  background-color: lighten(antiquewhite, 15);
-  height: calc(100vh - 670px);
-}
-
 
 @mixin blurText($blur: 5px){
   color: transparent;
   text-shadow: 0 0 $blur rgba(0, 0, 0, 0,5);
 }
-.boks{
-  font-size: 40px;
-  @include blurText;
+.boks1{
+  background-color: grey;
+  padding: 20px 20px;
+  margin-bottom: 40px;
+}
+.bar1{
+  padding: 5px 50px;
+  background-color: aquamarine;
+  width: 25%;
+  border-style: solid;
+  border-color: aquamarine;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.bar2{
+  padding: 5px 50px;
+  background-color: #2a55a0;
+  width: 45%;
+  border-style: solid;
+  border-color: #2a55a0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.bar3{
+  padding: 5px 50px;
+  background-color: #a04e66;
+  width: 75%;
+  border-style: solid;
+  border-color: #a04e66;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.boks2 {
+  background-color: lightgray;
+  margin-bottom: 40px;
+  padding: 20px 20px;
+
+}
+
+.kurs1{
+  padding: 5px 50px;
+  background-color: #879da0;
+  width: 30%;
+  border-style: solid;
+  border-color: #879da0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.kurs2{
+  padding: 5px 50px;
+  background-color: #879da0;
+  width: 38%;
+  border-style: solid;
+  border-color: #879da0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.info{
+  font-family: "Open Sans";
+  text-align: center;
+  margin-bottom: 20px;
 }
